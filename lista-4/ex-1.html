@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saúde e Sustentabilidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Saúde & Sustentabilidade</h1>
 
+    <!-- 1 - Atividade Física e Alimentação -->
+    <section>
+      <h2>1 - Importância da Atividade Física e Alimentação Saudável</h2>
+      <p>
+        A prática de atividades físicas é essencial para manter a saúde e o bem-estar. Exercícios regulares trazem diversos benefícios,
+        como a prevenção de doenças, a melhora na qualidade de vida e o controle do peso corporal. É importante escolher uma atividade
+        que você goste, como caminhada, corrida, natação ou dança, para que se torne um hábito prazeroso.
+      </p>
+
+      <p>
+        Além dos benefícios físicos, a atividade física também contribui para a saúde mental. Estudos mostram que a prática regular de
+        exercícios pode reduzir os níveis de estresse, ansiedade e depressão. A atividade física estimula a liberação de endorfinas,
+        neurotransmissores que promovem uma sensação de bem-estar e felicidade.
+      </p>
+
+      <h3>Alimentação Saudável</h3>
+      <p>
+        A alimentação saudável é fundamental para o funcionamento adequado do corpo. Uma dieta equilibrada, rica em frutas, vegetais e
+        grãos integrais, fornece os nutrientes necessários para o organismo. É essencial incluir uma variedade de alimentos para garantir
+        a ingestão de vitaminas e minerais essenciais.
+      </p>
+      <p>
+        Outro ponto importante é a hidratação. O consumo adequado de água é crucial para o funcionamento das células e para a regulação
+        da temperatura corporal. A desidratação pode levar a problemas de saúde, como fadiga, dor de cabeça e diminuição do desempenho físico.
+      </p>
+
+      <h3>Benefícios das Atividades Físicas</h3>
+      <table>
+        <thead>
+          <tr><th>Atividade</th><th>Benefícios</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Caminhada</td><td>Melhora a circulação e reduz o estresse</td></tr>
+          <tr><td>Natação</td><td>Fortalece os músculos e melhora a resistência</td></tr>
+          <tr><td>Corrida</td><td>Acelera o metabolismo e melhora a saúde cardiovascular</td></tr>
+          <tr><td>Dança</td><td>Melhora a coordenação e promove o bem-estar mental</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Dicas para uma Vida Saudável</h3>
+      <ul>
+        <li>Pratique atividades físicas regularmente, pelo menos 150 minutos por semana.</li>
+        <li>Escolha atividades que você goste e que possam ser incorporadas à sua rotina.</li>
+        <li>Mantenha uma alimentação equilibrada, evitando o consumo excessivo de açúcar e gordura.</li>
+        <li>Beba bastante água ao longo do dia para manter-se hidratado.</li>
+        <li>Durma bem. O sono é fundamental para a recuperação e para o desempenho físico.</li>
+      </ul>
+
+      <h4>Formulário: Atividades Físicas</h4>
+      <form id="formAtividade">
+        <label>Nome:<br><input type="text" id="nomeAtividade" placeholder="Seu nome"></label><br><br>
+
+        <div>Atividade Física Preferida:</div>
+        <label><input type="radio" name="atividade" value="Caminhada"> Caminhada</label><br>
+        <label><input type="radio" name="atividade" value="Corrida"> Corrida</label><br>
+        <label><input type="radio" name="atividade" value="Natação"> Natação</label><br>
+        <label><input type="radio" name="atividade" value="Dança"> Dança</label><br><br>
+
+        <label>Comentário:<br>
+          <textarea id="comentarioAtividade" rows="3" placeholder="Escreva sua experiência..."></textarea>
+        </label><br><br>
+
+        <button type="button" onclick="enviarAtividade()">Enviar</button>
+        <p id="feedbackAtividade" class="feedback"></p>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- 2 - Sustentabilidade -->
+    <section>
+      <h2>2 - Sustentabilidade e Conservação Ambiental</h2>
+      <p>
+        A sustentabilidade é um conceito que se refere à utilização consciente dos recursos naturais, de forma a garantir que as gerações
+        futuras tenham acesso a esses recursos. É fundamental adotar práticas que promovam a conservação ambiental para proteger o planeta e a biodiversidade.
+      </p>
+
+      <h3>Importância da Sustentabilidade</h3>
+      <p>
+        A adoção de práticas sustentáveis ajuda a minimizar os impactos negativos das atividades humanas no meio ambiente. Isso inclui a redução
+        do consumo de recursos, a reciclagem de materiais, a preservação dos ecossistemas e a promoção de uma economia mais verde.
+      </p>
+
+      <div class="img-placeholder">Imagem: Práticas sustentáveis</div>
+
+      <h3>Tabela 1: Práticas Sustentáveis</h3>
+      <table>
+        <thead>
+          <tr><th>Prática</th><th>Descrição</th><th>Benefícios</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reciclagem</td>
+            <td>Processo de transformar materiais para reutilização</td>
+            <td>Reduz o desperdício e economiza recursos</td>
+          </tr>
+          <tr>
+            <td>Agricultura Orgânica</td>
+            <td>Cultivo de alimentos sem pesticidas e fertilizantes sintéticos</td>
+            <td>Melhora a saúde do solo e da biodiversidade</td>
+          </tr>
+          <tr>
+            <td>Uso de Energias Renováveis</td>
+            <td>Utilização de fontes de energia como solar e eólica</td>
+            <td>Diminui a dependência de combustíveis fósseis</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Tabela 2: Impactos Ambientais</h3>
+      <table>
+        <thead>
+          <tr><th>Impacto</th><th>Causa</th><th>Consequências</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Desmatamento</td>
+            <td>Expansão agrícola e urbana</td>
+            <td>Perda de biodiversidade e alterações climáticas</td>
+          </tr>
+          <tr>
+            <td>Poluição do Ar</td>
+            <td>Emissões de indústrias e veículos</td>
+            <td>Problemas de saúde e degradação ambiental</td>
+          </tr>
+          <tr>
+            <td>Mudanças Climáticas</td>
+            <td>Emissão de gases de efeito estufa</td>
+            <td>Aumento da temperatura global e eventos climáticos extremos</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Formulário: Sustentabilidade</h4>
+      <p>Para entender melhor as práticas sustentáveis na sua comunidade, preencha:</p>
+      <form id="formSustent">
+        <label>Nome:<br><input type="text" id="nomeSustent" placeholder="Seu nome"></label><br><br>
+
+        <div>Prática Sustentável Preferida:</div>
+        <label><input type="checkbox" name="pratica" value="Reciclagem"> Reciclagem</label><br>
+        <label><input type="checkbox" name="pratica" value="Agricultura Orgânica"> Agricultura Orgânica</label><br>
+        <label><input type="checkbox" name="pratica" value="Energias Renováveis"> Uso de Energias Renováveis</label><br><br>
+
+        <label>Comentários:<br>
+          <textarea id="comentarioSustent" rows="3" placeholder="Compartilhe práticas ou ideias..."></textarea>
+        </label><br><br>
+
+        <button type="button" onclick="enviarSustent()">Enviar</button>
+        <p id="feedbackSustent" class="feedback"></p>
+      </form>
+
+      <p class="small">
+        Link para mais informações: <a href="#" onclick="alert('Abra o link do Instituto Ambiental no seu site quando tiver o endereço.'); return false;">Instituto Ambiental</a>
+      </p>
+
+      <h3>Conclusão</h3>
+      <p>
+        Adotar práticas sustentáveis é fundamental para a conservação do meio ambiente e para garantir um futuro melhor para as próximas gerações.
+        Cada pequena ação conta e pode fazer a diferença!
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
