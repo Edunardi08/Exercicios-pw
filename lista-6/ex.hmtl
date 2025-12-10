@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfólio - Eduardo Nardi</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<header>
+<h1>Eduardo Nardi</h1>
+<nav>
+<a href="#sobre">Sobre Mim</a>
+<a href="#projetos">Projetos</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+
+<section id="sobre">
+<h2>Sobre Mim</h2>
+<p>
+Olá! Meu nome é Eduardo Nardi, tenho 16 anos e sou estudante de Desenvolvimento de Sistemas.
+Apaixonado por tecnologia, gosto de criar sites, aprender programação e evoluir cada vez mais na área de TI. Alem disso gosto muito de esportes como futebol e handbol e sou louco por video games de aventura e battle royale. Meus jogos preferidos sao fortnite e fifa 
+</p>
+</section>
+
+
+<section id="projetos">
+<h2>Projetos</h2>
+
+
+<div class="projeto">
+<h3>Habilidades</h3>
+<p>HTML, CSS, Introdução à Programação, Conhecimento básico de lógica de programação, Noções de desenvolvimento de sistemas</p>
+</div>
+
+
+<div class="projeto">
+<h3>Projeto 1 </h3>
+<p></p>
+</div>
+
+
+<div class="projeto">
+<h3>Projeto 2</h3>
+<p></p>
+</div>
+
+
+</section>
+
+
+<section id="contato">
+<h2>Contato</h2>
+<p>Email: eduardonardi@gmail.com</p>
+</section>
+
+
+<footer>
+<p>© 2025 - Criado por Eduardo Nardi</p>
+</footer>
+
+
+</body>
+</html>
