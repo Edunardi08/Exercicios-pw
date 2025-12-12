@@ -1,0 +1,139 @@
+@import url(/Lista-9/css/reset.css);
+@import url(/Lista-9/css/variabeis.css);
+/* Corpo */
+body {
+  background-image: url(../assets/images/bg-2.png);
+  height: 100vh;
+}
+/* Conteiner */
+.conteiner {
+  display: grid;
+  grid-template-areas: "header" "header" "registro" "registro" "registro";
+  grid-template-columns: 800px 320px 500px 700px 200px;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  padding: 10px;
+  width: 1140px;
+  margin: 0 auto;
+}
+/* Menu */
+header {
+  grid-area: header;
+  background-color: var(--primary-color);
+  grid-column: 1/4;
+  max-width: 1140px;
+  grid-row: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+header .logo {
+  padding: 15px;
+}
+header .menu {
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+}
+header a {
+  color: var(--white-color);
+  font-weight: bold;
+  transition: 0.3s;
+}
+header a:hover {
+  border-bottom: 5px solid #3498db;
+}
+header .click-buttons {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  left: 500px;
+}
+/* Registro */
+.register {
+  grid-area: registro;
+  width: 350px;
+  justify-self: end;
+}
+.register h1 {
+  text-align: center;
+  padding: 20px;
+}
+.register .register-p {
+  text-align: left;
+  padding: 5px;
+}
+.register .input-text {
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 10px;
+  width: 350px;
+}
+.register .note {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+.register h2 {
+  padding: 15px;
+  text-align: left;
+}
+.opcao {
+  background-color: #fff;
+  width: 250px;
+}
+.genero {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.hobbies {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 5px;
+  width: 350px;
+}
+.text-area {
+  width: 350px;
+  height: 176px;
+  margin-bottom: 20px;
+}
+.agree {
+  margin-bottom: 20px;
+}
+/* Botões */
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+.submit {
+  padding: 15px;
+  background-color: green;
+  cursor: pointer;
+  color: var(--white-color);
+  font-weight: bold;
+  border-radius: 15px;
+  width: 140px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.submit:hover {
+  background-color: rgb(64, 214, 64);
+}
+.cancel {
+  padding: 15px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  color: var(--white-color);
+  font-weight: bold;
+  border-radius: 15px;
+  width: 140px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.cancel:hover {
+  background-color: #f75f5c;
+}
