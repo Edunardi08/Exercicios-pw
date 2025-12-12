@@ -1,0 +1,150 @@
+@import url(/Lista-9/css/reset.css);
+@import url(/Lista-9/css/variabeis.css);
+body {
+  background-image: url(../assets/images/bg-2.png);
+  height: 100vh;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-areas:
+    "header" "header"
+    "main" "main" "main" "info" "info";
+  grid-template-columns: 800px 320px 500px 300px 0 320px;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  padding: 10px;
+  width: 1140px;
+  margin: 0 auto;
+}
+/* cabeçalho */
+header {
+  grid-area: header;
+  background-color: var(--primary-color);
+  grid-column: 1/4;
+  max-width: 1140px;
+  grid-row: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+header .logo {
+  padding: 15px;
+}
+header .menu {
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+}
+header a {
+  color: var(--white-color);
+  font-weight: bold;
+  transition: 0.3s;
+}
+header a:hover {
+  border-bottom: 5px solid #3498db;
+}
+header .click-buttons {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  left: 500px;
+}
+
+/* Main Content */
+main {
+  grid-area: main;
+  grid-column: 1/2;
+  max-width: 800px;
+  grid-row: 2/6;
+  background-color: var(--white-color);
+}
+/* Main-Content */
+main .product h2 {
+  font-size: 20px;
+  padding: 15px;
+}
+main .product p {
+  max-width: 380px;
+  max-height: 100px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+main .product button {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: bold;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+main .product .img-box img {
+  width: 380px;
+  padding: 10px;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+/* Painel direito */
+
+.info {
+  grid-area: info;
+  max-width: 320px;
+  grid-column: 2/4;
+  grid-row: 2/6;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info h2 {
+  padding: 10px;
+  background: var(--white-color);
+  width: 320px;
+  height: 50px;
+  border: 2px solid #3498db;
+  margin: 10px;
+}
+
+.info .tutorial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.info .tutorial h2 {
+  margin-bottom: -30px;
+}
+.info .tutorial-content {
+  display: flex;
+  width: 320px;
+  flex-wrap: wrap;
+  background-color: var(--white-color);
+}
+.info .tutorial-content img {
+  width: 120px;
+  padding: 10px;
+}
+.info .tutorial-content p {
+  display: flex;
+  align-items: center;
+}
+.info .ad-img {
+  background-color: var(--white-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+  max-width: 320px;
+  margin-left: 10px;
+}
+.info .ad-img img {
+  display: block;
+  justify-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
