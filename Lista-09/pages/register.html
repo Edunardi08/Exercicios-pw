@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register-Craftsy</title>
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
+    <div class="conteiner">
+      <!-- Menu -->
+      <header>
+        <div class="logo">
+          <img src="../assets/images/logo.png" alt="Logo do site" />
+        </div>
+        <nav class="menu">
+          <ul>
+            <a href="/Lista-9/index.html">Smartfones</a>
+          </ul>
+          <ul>
+            <a href="/Lista-9/index.html">Tablets</a>
+          </ul>
+          <ul>
+            <a href="/Lista-9/index.html">Computadores</a>
+          </ul>
+        </nav>
+        <!-- Área do usuário -->
+        <div class="click-buttons">
+          <ul>
+            <a href="./login.html">Login</a>
+          </ul>
+          <ul>
+            <a href="./register.html">Registrar</a>
+          </ul>
+        </div>
+      </header>
+      <!-- Registro -->
+      <div class="register">
+        <!-- Dados do usúario -->
+        <h1>Registrar</h1>
+        <p class="register-p">Nome</p>
+        <input
+          class="input-text"
+          placeholder="Seu nome aqui"
+          type="text"
+          name=""
+          id=""
+        />
+        <p class="note">Obrigatório.</p>
+        <p class="register-p">E-mail</p>
+        <input
+          class="input-text"
+          placeholder="email@email.com"
+          type="email"
+          name=""
+          id=""
+        />
+        <p class="note">Obrigatório.</p>
+        <p class="register-p">Senha</p>
+        <input
+          class="input-text"
+          placeholder="Senha"
+          type="password"
+          name=""
+          id=""
+        />
+        <p class="note">Obrigatório.</p>
+        <h2>País de Nascimento</h2>
+        <select class="opcao" name="opcao" id="opcao">
+          <option value="" selected disabled>Escolha um país</option>
+          <option value="1">Argentina</option>
+          <option value="2">Brasil</option>
+          <option value="3">Chile</option>
+          <option value="4">Dinamarca</option>
+          <option value="5">Estados Unidos</option>
+          <option value="6">França</option>
+        </select>
+        <p class="note">Obrigatório.</p>
+        <!-- Gênero -->
+        <h2>Gênero</h2>
+        <input type="radio" name="genero" id="" />
+        <label class="genero" for="">Masculino</label>
+        <input type="radio" name="genero" id="" />
+        <label class="genero" for="">Feminino</label>
+        <input type="radio" name="genero" id="" />
+        <label class="genero" for="">Prefiro não dizer</label>
+        <!-- Hobbies -->
+        <h2>Hobbies</h2>
+        <div class="hobbies">
+          <input type="radio" name="hobbies" id="" />
+          <label for="">Guitarra</label>
+          <input type="radio" name="hobbies" id="" />
+          <label for="">Futebol</label>
+          <input type="radio" name="hobbies" id="" />
+          <label for="">Tênis</label>
+          <input type="radio" name="hobbies" id="" />
+          <label for="">Programação</label>
+        </div>
+        <!-- Comentarios -->
+        <h2>Comentários</h2>
+        <textarea
+          class="text-area"
+          name="Comentários"
+          id="Comentários"
+        ></textarea>
+        <div class="agree">
+          <input type="checkbox" name="agree" id="" />
+          <label for="">Aceito os termos e condições</label>
+        </div>
+        <!-- Botões -->
+        <div class="buttons">
+          <input class="submit" type="submit" value="Registrar" />
+          <input class="cancel" type="submit" value="Cancelar" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

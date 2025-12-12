@@ -1,0 +1,104 @@
+@import url(../css/reset.css);
+@import url(../css/variabeis.css);
+body {
+  background-image: url(../assets/images/bg-2.png);
+  height: 100vh;
+}
+.conteiner {
+  display: grid;
+  grid-template-areas:
+    "header" "header"
+    "login" "login" "login";
+  grid-template-columns: 800px 320px 500px 300px 200px;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  padding: 10px;
+  width: 1150px;
+  margin: 0 auto;
+}
+/* cabeçalho */
+header {
+  grid-area: header;
+  background-color: var(--primary-color);
+  grid-column: 1/4;
+  max-width: 1140px;
+  grid-row: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+header .logo {
+  padding: 15px;
+}
+header .menu {
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+}
+header a {
+  color: var(--white-color);
+  font-weight: bold;
+  transition: 0.3s;
+}
+header a:hover {
+  border-bottom: 5px solid #3498db;
+}
+header .click-buttons {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  left: 500px;
+}
+/* Login */
+.login {
+  grid-area: login;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-self: right;
+  padding-top: 25px;
+  height: 570px;
+}
+.login h1 {
+  text-align: center;
+  padding: 15px;
+}
+.login .login-p {
+  color: var(--text-color);
+  margin-bottom: 7px;
+}
+.login .login-content {
+  padding: 7px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.login .login-remember {
+  color: var(--text-color);
+  text-align: end;
+  margin-bottom: 15px;
+}
+.login .info {
+  color: var(--secondary-color);
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+/* Botão */
+.login .button {
+  text-align: center;
+  color: var(--white-color);
+  background-color: #3498db;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  width: 140px;
+  transition: 0.3s;
+}
+
+.login .button:hover {
+  background-color: #73c0f3;
+}
