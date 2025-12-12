@@ -1,0 +1,95 @@
+/* Estilos Gerais */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container Principal da Calculadora */
+.calculadora {
+    /* Define o layout principal: Display no topo, Botões embaixo */
+    display: grid;
+    grid-template-rows: 100px 1fr; 
+    width: 300px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+/* Estilização do Display */
+.display {
+    background-color: #222;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.5em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden; /* Evita que números longos quebrem o layout */
+}
+
+/* Container dos Botões - O CORAÇÃO DO GRID */
+.botoes {
+    display: grid; 
+    
+    /* Cria 4 colunas de largura igual (1 fração do espaço) */
+    grid-template-columns: repeat(4, 1fr); 
+    
+    /* Define a altura de cada linha de botão (5 linhas) */
+    grid-template-rows: repeat(5, 60px); 
+    
+    /* Espaçamento entre os botões */
+    gap: 1px; 
+    background-color: #ccc; 
+}
+
+/* Estilização Base dos Botões */
+.botoes button {
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.1s;
+}
+
+.botoes button:hover {
+    background-color: #d4d4d4;
+}
+
+/* Estilos para Botões Especiais (Operadores, C, etc) */
+.operador {
+    background-color: #ff9800;
+    color: white;
+}
+
+.operador:hover {
+    background-color: #e68900;
+}
+
+/* Configurações de Span (Ocupação de Células) */
+
+/* Botão Zero (0) - Ocupa 2 colunas horizontalmente */
+.zero {
+    grid-column: span 2; 
+}
+
+/* Botão Igual (=) - Ocupa 2 linhas verticalmente */
+/* Nota: Ele é o último item do HTML e por isso o posicionamento em 2 linhas funciona bem. */
+.igual {
+    grid-row: span 2;
+    background-color: #4CAF50;
+    color: white;
+    /* Move o botão igual para a posição da última coluna */
+    grid-column: 4; 
+    grid-row: 4 / span 2; /* Começa na linha 4 e se estende por 2 linhas (Linhas 4 e 5) */
+}
+
+.igual:hover {
+    background-color: #45a049;
+}
