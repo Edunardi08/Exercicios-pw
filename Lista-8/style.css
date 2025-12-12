@@ -1,0 +1,177 @@
+/* ===================================================================
+   RESET DE ESTILOS
+   =================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================================================================
+   ESTILOS GLOBAIS
+   =================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===================================================================
+   HEADER
+   =================================================================== */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================================================
+   LAYOUT PRINCIPAL (Sidebar + Content)
+   =================================================================== */
+.main-layout {
+    display: flex;
+    flex: 1;
+    background-color: #fff;
+}
+
+/* ===================================================================
+   SIDEBAR (Menu Lateral)
+   =================================================================== */
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    width: 250px;
+    flex: 0 0 250px;  /* Largura fixa para a sidebar */
+    padding: 20px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    color: #3498db;  /* Cor de destaque ao passar o mouse */
+}
+
+/* ===================================================================
+   CONTEÚDO PRINCIPAL
+   =================================================================== */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    flex-grow: 1; /* O conteúdo ocupa o restante do espaço disponível */
+    gap: 20px;    /* Espaçamento entre os cards */
+}
+
+/* ===================================================================
+   CARDS (Elementos da Dashboard)
+   =================================================================== */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 220px;  /* Largura inicial dos cards */
+    flex-grow: 1;       /* Cresce igualmente */
+    flex-shrink: 1;     /* Encolhe quando necessário */
+    transition: transform 0.3s, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Efeito de hover para os cards */
+.card:hover {
+    transform: translateY(-8px);      /* Levanta o card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    background-color: #ecf0f1;         /* Muda a cor de fundo */
+}
+
+/* Títulos dos cards */
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* ===================================================================
+   CARD DE DESTAQUE
+   =================================================================== */
+.card.destaque {
+    flex-grow: 2;           /* O card de destaque ocupa o dobro de espaço */
+    flex-basis: 300px;      /* Começa com uma largura maior */
+    order: -1;              /* Coloca este card primeiro */
+    align-self: center;     /* Centraliza o card no layout */
+    background-color: #3498db;
+    color: white;
+}
+
+.card.destaque:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #2980b9;
+}
+
+/* ===================================================================
+   RODAPÉ
+   =================================================================== */
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: auto; /* Fixa o rodapé na parte inferior da página */
+}
+
+/* ===================================================================
+   MISSÕES EXTRAS (Se aplicadas)
+   =================================================================== */
+
+/* Card que não encolhe */
+.card.sem-encolher {
+    flex-shrink: 0; /* Este card nunca vai encolher */
+}
+
+/* Reorganizar os cards com 'order' */
+.card:nth-child(3) {
+    order: 2;
+}
+
+.card:nth-child(4) {
+    order: 1;
+}
+
+/* Alinhamento personalizado dos cards com 'align-self' */
+.card:nth-child(2) {
+    align-self: flex-start;
+}
+
+.card:nth-child(3) {
+    align-self: flex-end;
+}
+
+/* Estilo para cards interativos com 'hover' e 'active' */
+.card:active {
+    background-color: #ddd;  /* Altera a cor quando o card é pressionado */
+}
